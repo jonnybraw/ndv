@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# ndv
-=======
 # Sorteando pessoa
 
 Este é uma pagina que irá realizar sorteio de pessoas, aonde você irá carregar uma lista em arquivo TXT.
@@ -9,12 +6,10 @@ Este é uma pagina que irá realizar sorteio de pessoas, aonde você irá carreg
 
 Carrega lista de pessoas a serem sorteadas.
 
-###2 - Altera Video.
+### 2 - Altera Video.
 
 O video que está rodando no fundo executará conforme o que foi inserido na configuração.
 
-###3 - Alterar Logo.
+### 3 - Alterar Logo.
 
 O Logo substituirá o logo inicial inserido á página.
-
->>>>>>> 76ec9f7 (Edição de logo e video)
