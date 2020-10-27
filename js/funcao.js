@@ -30,8 +30,6 @@ var loadImg = function(event, idloadimg) {
     $('.modal').modal('close');
 };
 
-
-
 //carregar lista de pessoas a serem sorteadas
 $(document).on('change','#fileUpload', function(){
     var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.txt)$/;
@@ -81,7 +79,7 @@ $(document).on('click','#sortear', function(){
         $("#error").text("");
     },2000);
 });
-i=0;
+
 //Bloqueia pressionar enter no campo titulo
 $(document).on('keypress',"#title",function(event){
       if (event.which == '13') {

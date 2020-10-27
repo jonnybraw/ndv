@@ -19,5 +19,5 @@ O Logo substituirá o logo inicial inserido á página.
 
 ### 4 - Alterar Titulo e Mensagens no radapé
 
-O Título e a mensagem podem ser alteradas ao clicar no label
+O Título e a mensagem podem ser alteradas ao clicar no label.
 
