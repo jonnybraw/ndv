@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>NDV Brasil - Sorteio</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <script type="text/javascript" src="js/funcao.js"></script>
+</head>
+<body>
+    <video id="backgroundVideo" width="100%" loop muted>
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <div class="logoBanner">
+        <img id="imgLogo" name="imgLogo" src="imagem/logo.png" alt="Logo do Evento" >  
+    </div>
+    <div id="sorteio">
+        <h3 class="center">Nome sorteado</h3>
+        <h1 id="dvCSV" class="center"></h1>
+        <h5 id="ant3" class="center"></h5>
+        <h5 id="ant2" class="center"></h5>
+        <h5 id="ant1" class="center"></h5>
+    </div>
+    <div id="error"></div>
+    <div id="qtd"></div>
+
+    <input class="scale-transition scale-out" type="button" id="sortear" value="Sortear" accept="application/txt" />
+
+
+    <!-- Modal Trigger -->
+    <a class="modal-trigger" href="#modal1"><i class="small material-icons">settings</i></a>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content center">
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span><i class="material-icons left">playlist_add</i>Arquivo</span>
+                    <input type="file" id="fileUpload" name="fileUpload" accept=".txt">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+            <div class="file-field input-field">
+                <div class="btn waves-effect waves-teal orange">
+                    <span><i class="material-icons left">ondemand_video</i>Video</span>
+                    <input type="file" id="upVideo" name="upVideo" onchange="loadVideo(event,'backgroundVideo');" accept=".mp4">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" id="upVideoName">
+                </div>
+            </div>
+            <div class="file-field input-field">
+                <div class="btn waves-effect waves-teal red">
+                    <span><i class="material-icons left">panorama</i>Logo</span>
+                    <input type="file" id="upLogo" name="upLogo" onchange="loadImg(event,'imgLogo');" accept="image/x-png,image/jpeg">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" id="upLogoName">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
