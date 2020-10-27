@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.modal').modal();
     $('.tap-target').tapTarget();
+    $('.tabs').tabs();
     backgroundVideo.play();
 });
 var array = [];
@@ -80,3 +81,10 @@ $(document).on('click','#sortear', function(){
         $("#error").text("");
     },2000);
 });
+i=0;
+//Bloqueia pressionar enter no campo titulo
+$(document).on('keypress',"#title",function(event){
+      if (event.which == '13') {
+        event.preventDefault();
+      }
+  });

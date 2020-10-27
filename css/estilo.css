@@ -97,7 +97,7 @@ video{
 .logoBanner{
     position: fixed;
     left: 0;
-    bottom: 0;
+    top: 20px;
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
@@ -126,4 +126,22 @@ a.modal-trigger{
 a.modal-trigger:hover{
     color: red;
     text-shadow: 2px 2px 3px #000;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+    color: red;
+    text-shadow: 2px 2px yellow;
+    font-size: 4vh;
+
+}
+.footer:hover, #title:hover{
+    border: 1px solid red;
+}
+#title{
+    line-height: 1em;
+    height: 1.2em;
 }
